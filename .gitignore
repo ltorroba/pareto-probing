@@ -136,3 +136,5 @@ data/
 checkpoints/*/*/*/*/*
 !checkpoints/*/*/*/*/all_results.tsv
 !checkpoints/*/*/*/*/finished.txt
+
+.DS_Store
