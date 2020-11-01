@@ -1,3 +1,36 @@
+# Instructions to quickly generate data
+
+This is a modified version of the original Pareto Probing repository.
+
+1. Create a conda environment with ```conda env create -f environment.yml```
+2. Then activate the environment and install your appropriate version of [PyTorch](https://pytorch.org/get-started/locally/).
+```bash
+$ conda install -y pytorch torchvision cudatoolkit=10.1 -c pytorch
+$ # conda install pytorch torchvision cpuonly -c pytorch
+$ pip install transformers
+```
+3.  Install the newest version of fastText:
+```bash
+$ pip install git+https://github.com/facebookresearch/fastText
+```
+4. Download the UD treebanks
+```bash
+$ make get_ud
+```
+5. Preprocess the treebanks. Need to run this for each language you want (see options in `src/util/ud\_list.py`),
+```bash
+$ make process LANGUAGE=<language> REPRESENTATION=ud
+```
+6. Get the embeddings for each sentence for whatever representation you want (e.g., `bert`). Need to run this for each language you want (see options in `src/util/ud\_list.py`),
+```bash
+$ make process LANGUAGE=<language> REPRESENTATION=<representation>
+```
+7. Run the following command for the desired language/representation pairs. This will generate files that can be directly plugged into the bayesian probing codebase.
+```bash
+python -u src/h02_learn/convert_data.py --language <language> --representation <representation>
+```
+
+
 # pareto-probing
 
 This repository contains code accompanying the paper: "Pareto Probing: Trading Off Accuracy and Complexity" (Pimentel et al., EMNLP 2020). It is a study of probing in the context of a Pareto trade-off.
