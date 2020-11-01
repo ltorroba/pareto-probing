@@ -17,7 +17,7 @@ $ pip install git+https://github.com/facebookresearch/fastText
 ```bash
 $ make get_ud
 ```
-5. Preprocess the treebanks. Need to run this for each language you want (see options in `src/util/ud\_list.py`),
+5. Preprocess the treebanks. Need to run this for each language you want (see options in `src/util/ud_list.py`),
 ```bash
 $ make process LANGUAGE=<language> REPRESENTATION=ud
 ```
