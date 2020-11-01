@@ -1,6 +1,6 @@
 # Instructions to quickly generate data
 
-This is a modified version of the original Pareto Probing repository.
+This is a modified version of the original Pareto Probing repository. Below are the instructions to generate dependency arc data for other languages.
 
 1. Create a conda environment with ```conda env create -f environment.yml```
 2. Then activate the environment and install your appropriate version of [PyTorch](https://pytorch.org/get-started/locally/).
