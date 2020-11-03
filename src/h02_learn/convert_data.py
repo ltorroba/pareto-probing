@@ -8,7 +8,7 @@ from argparse import ArgumentParser
 
 parser = ArgumentParser(description="Converts the Pareto Probing data to the format used in Probekit.")
 parser.add_argument("--language", type=str, help="The language to consider, e.g., 'english'.")
-parser.add_argument("--representation", choices=["bert", "albert", "roberta", "fasttext"],
+parser.add_argument("--representation", choices=["bert", "albert", "roberta", "fast"],
                     help="The representation to used to embed tokens.")
 args = parser.parse_args()
 
@@ -17,7 +17,7 @@ data_path = "./data/processed"
 output_path = "./data/probekit"
 task = "dep_label"
 language = args.language
-representation = "fasttext" if args.representation == "fast" else args.representation
+representation = args.representation
 
 if representation in ["bert", "albert", "roberta"]:
     embedding_size = 768
