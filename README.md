@@ -1,6 +1,6 @@
 # Instructions to quickly generate data
 
-This is a modified version of the original Pareto Probing repository.
+This is a modified version of the original Pareto Probing repository. Below are the instructions to generate dependency arc data for other languages.
 
 1. Create a conda environment with ```conda env create -f environment.yml```
 2. Then activate the environment and install your appropriate version of [PyTorch](https://pytorch.org/get-started/locally/).
@@ -17,7 +17,7 @@ $ pip install git+https://github.com/facebookresearch/fastText
 ```bash
 $ make get_ud
 ```
-5. Preprocess the treebanks. Need to run this for each language you want (see options in `src/util/ud\_list.py`),
+5. Preprocess the treebanks. Need to run this for each language you want (see options in `src/util/ud_list.py`),
 ```bash
 $ make process LANGUAGE=<language> REPRESENTATION=ud
 ```
