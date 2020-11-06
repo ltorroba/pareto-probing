@@ -1,6 +1,5 @@
 import numpy as np
 import torch
-from itertools import groupby
 
 from .pos_tag import PosTagDataset
 
@@ -41,7 +40,7 @@ class DepLabelDatasetProbekit(PosTagDataset):
 
                 x_raw += [[x_raw_tail, x_raw_head]]
                 y_raw += [rel]
-                probekit_words += [token["word"]]
+                probekit_words += [(token["word"], sentence_ud[head - 1]["word"])]
 
         x_raw = np.array(x_raw)
         y_raw = np.array(y_raw)
@@ -58,15 +57,16 @@ class DepLabelDatasetProbekit(PosTagDataset):
         x_raw, y_raw = self.load_data(self.iterate_embeddings)
 
         data = []
-        for embed, dep, word in zip(x_raw, y_raw, self._probekit_words):
+        for embed, dep, words in zip(x_raw, y_raw, self._probekit_words):
+            tail, head = words
             data += [{
-                "word": word,
-                "embedding": embed,
+                "head": head,
+                "tail": tail,
+                "embedding": embed,  # The tail and then the head in this vector
                 "attributes": {
                     "dep": dep
                 }
             }]
-
 
         self._probekit_data = data
 
