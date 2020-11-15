@@ -20,4 +20,6 @@ LANGUAGE_CODES = {
     'urdu': 'ur',
     'telugu': 'te',
     'indonesian': 'id',
+    'german': 'de',
+    'chinese': 'zh',
 }
