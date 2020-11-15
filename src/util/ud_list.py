@@ -12,7 +12,7 @@ UD_LIST = {
     'urdu': 'UD_Urdu-UDTB/ur_udtb-ud-%s.conllu',
     'telugu': 'UD_Telugu-MTG/te_mtg-ud-%s.conllu',
     'indonesian': 'UD_Indonesian-GSD/id_gsd-ud-%s.conllu',
-    'german': 'UD_German-HDT/de_hdt-ud-%s.conllu',
+    'german': 'UD_German-HDT/de_gsd-ud-%s.conllu',
     'chinese': 'UD_Chinese-GSDSimp/zh_gsdsimp-ud-%s.conllu',
 
     # 'af': 'UD_Afrikaans-AfriBooms/af_afribooms-ud-%s.conllu',
