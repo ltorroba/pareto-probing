@@ -4,7 +4,7 @@ UD_LIST = {
     'basque': 'UD_Basque-BDT/eu_bdt-ud-%s.conllu',
     'finnish': 'UD_Finnish-TDT/fi_tdt-ud-%s.conllu',
     'turkish': 'UD_Turkish-IMST/tr_imst-ud-%s.conllu',
-    'arabic': 'UD_Arabic-NYUAD/ar_nyuad-ud-%s.conllu',
+    'arabic': 'UD_Arabic-PADT/ar_padt-ud-%s.conllu',
     'japanese': 'UD_Japanese-BCCWJ/ja_bccwj-ud-%s.conllu',
     'tamil': 'UD_Tamil-TTB/ta_ttb-ud-%s.conllu',
     'korean': 'UD_Korean-Kaist/ko_kaist-ud-%s.conllu',
