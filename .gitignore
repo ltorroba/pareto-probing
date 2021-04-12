@@ -132,6 +132,7 @@ dmypy.json
 .vscode/
 
 # Project specific
+data
 data/
 checkpoints/*/*/*/*/*
 !checkpoints/*/*/*/*/all_results.tsv
