@@ -18,7 +18,7 @@ class BertPerWordModel(nn.Module):
         return model
 
     def forward(self, x, attention_mask, mappings):
-        output, _ = self.bert(x, attention_mask=attention_mask)
+        output, _ = self.bert(x, attention_mask=attention_mask, return_dict=False)
         return self.from_bpe_to_word(output, mappings)
 
     def from_bpe_to_word(self, output, mappings):
