@@ -1,6 +1,6 @@
 # Instructions to quickly generate data
 
-**This is a slightly modified version of the original [Pareto Probing repository](https://github.com/rycolab/pareto-probing), to support the code of the paper ["Probing as Quantifying Inductive Bias"](https://github.com/rycolab/evidence-probing). If you use this code, please cite the [their paper](https://aclanthology.org/2020.emnlp-main.254/).**
+**This is a slightly modified version of the original [Pareto Probing repository](https://github.com/rycolab/pareto-probing), which is used to generate the some of the data for ["Probing as Quantifying Inductive Bias"](https://github.com/rycolab/evidence-probing). If you use this code, please cite the [their paper](https://aclanthology.org/2020.emnlp-main.254/).**
 
 Below are the instructions to generate dependency arc data for other languages.
 
