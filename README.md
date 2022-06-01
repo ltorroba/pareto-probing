@@ -1,6 +1,8 @@
 # Instructions to quickly generate data
 
-This is a modified version of the original Pareto Probing repository. Below are the instructions to generate dependency arc data for other languages.
+**This is a modified version of the original Pareto Probing repository, to support the code of the paper ["Probing as Quantifying Inductive Bias"](https://github.com/rycolab/evidence-probing). If you use this code, please cite the [original paper](https://aclanthology.org/2020.emnlp-main.254/).**
+
+Below are the instructions to generate dependency arc data for other languages.
 
 1. Create a conda environment with ```conda env create -f environment.yml```
 2. Then activate the environment and install your appropriate version of [PyTorch](https://pytorch.org/get-started/locally/).
